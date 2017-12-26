@@ -1,4 +1,4 @@
-AngularJS Online Shopping
+# AngularJS Online Shopping
 
 This Project is a single application with angularJS, front end Bootstrap designing and back end PHP Script with MySql Database.
 
