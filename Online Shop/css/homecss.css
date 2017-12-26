@@ -1,0 +1,88 @@
+a:hover{
+	text-decoration-line:none; 
+}
+
+#header-part .container .navbar-header{
+	margin:0px 0px 10px 30px;	   
+}
+#header-part ul{
+	margin:5px 0px 0px 0px;  	   
+}
+#header-part ul li a{
+	color:#ffffff;
+}
+#header-part ul li a:hover{
+	color:red;
+}
+
+#footer-home{
+	width:100%;
+	background:#111111;  
+}
+#footer-home .container{
+	padding:10px 0px 10px 0px; 
+	text-align:center; 
+}
+#footer-home .container p{
+	color:#ffffff; 
+	font-size:16px;  
+}
+
+#main-home{
+	width:100%;
+	background:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)), url('../images/home/main.png');
+	background-size:cover;    
+}
+#main-home .container{
+	padding:270px 0px 270px 0px;    
+}
+#main-home .container h2{
+	text-align:center;
+	color:#ffffff;
+	font-size:52px;
+	font-family:cursive;        
+}
+#main-home .container .login-content{
+	text-align:center;
+	margin:20px 0px 0px 0px; 
+}
+#main-home .container .login-content a{
+	color:#ffffff;
+	font-size:16px;
+	background:red;
+	border-radius:6px;
+	padding:10px 20px 10px 20px; 
+
+}
+
+#main-login{
+	width:100%;
+	background:#ffffff;  
+}
+#main-login .container{
+	padding:100px 0px 100px 0px; 
+}
+#main-login .container .login-content{
+	text-align:center;
+	margin:70px 0px 0px 0px;   
+}
+#main-login .login-content h4{
+	font-size: 22px;
+	margin: 15px 0px 30px 0px;
+}
+
+#main-register{
+	width:100%;
+	background:#ffffff;  
+}
+#main-register .container{
+	padding:100px 0px 100px 0px; 
+}
+#main-register .container .register-content{
+	text-align:center;
+	margin:70px 0px 0px 0px;   
+}
+#main-register .register-content h4{
+	font-size: 22px;
+	margin: 15px 0px 30px 0px;
+}
