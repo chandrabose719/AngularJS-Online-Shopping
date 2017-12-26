@@ -1,0 +1,50 @@
+<!-- Header Part -->
+<div id="header-part">
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#!/"><img src="images/header-title.png" alt="My Site"></a>
+			</div>
+			<div class="navbar-right">
+				<ul class="nav navbar-nav"> 
+					<li><a href="#!/">Home</a></li>
+					<li><a href="#!/product">Product</a></li>
+					<li><a href="#!/cart">Cart: {{getCartcount()}}</a></li>
+					<li><a href="#!/login">Login</a></li>
+				</ul>
+			</div>	
+		</div>
+	</div>
+</div>
+<!-- Product Main -->
+<div id="main-part" ng-controller="productCtrl">
+	<div class="container">
+		<h2>Products</h2>
+		<div class="divider"></div>
+		<div ng-repeat="products in product_data">		
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+				<div class="main-content">
+					<form>	
+						<h4>{{products.product_name}}</h4>
+						<p>PRICE:&#8377;{{products.product_cost}}</p>
+						<input type="submit" class='form-control btn btn-success' ng-click="addtoCart($index)" value="Add To Cart">
+					</form>
+				</div>
+			</div>
+		</div>		
+	</div>
+</div>
+<!-- Footer Part -->
+<nav class="navbar navbar-fixed-bottom">
+	<div id="footer-home">
+		<div class="container">
+			<p>This is The Footer Contents || KVC Bose </p>
+		</div>	
+	</div>
+</nav>

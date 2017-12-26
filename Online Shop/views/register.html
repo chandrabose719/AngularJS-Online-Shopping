@@ -1,0 +1,67 @@
+<!-- Header Part -->
+<div id="header-part">
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#!/"><img src="images/header-title.png" alt="My Site"></a>
+			</div>s
+			<div class="navbar-right">
+				<ul class="nav navbar-nav"> 
+					<li><a href="#!/">Home</a></li>
+					<li><a href="#!/product">Product</a></li>
+					<li><a href="#!/login">Login</a></li>
+					<li><a href="#!/register">Signup</a></li>
+				</ul>
+			</div>	
+		</div>
+	</div>
+</div>
+<!-- Main Home -->
+<div id="main-register" ng-controller='registerCtrl'>
+	<div class="container">
+		<div class="register-content">
+			<h4>User Signup</h4>
+			<form>
+				<div class="form-group col-lg-4 col-lg-offset-1 col-md-4 col-md-offset-2 col-sm-6 col-xs-12">
+					<label class="pull-right">User Name :</label>
+				</div>
+				<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
+					<input type="text" class="form-control" name="user_name" ng-model="user_name">
+					<span class="text-danger"></span>
+				</div>
+				<div class="form-group col-lg-4 col-lg-offset-1 col-md-4 col-md-offset-2 col-sm-6 col-xs-12">
+					<label class="pull-right">User Email :</label>
+				</div>
+				<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
+					<input type="email" class="form-control" name="user_email" ng-model="user_email">
+					<span class="text-danger"></span>
+				</div>
+				<div class="form-group col-lg-4 col-lg-offset-1 col-md-4 col-md-offset-2 col-sm-6 col-xs-12">
+					<label class="pull-right">User Password :</label>
+				</div>
+				<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
+					<input type="password" class="form-control" name="user_password" ng-model="user_password">
+					<span class="text-danger"></span>
+				</div>
+				<div class="form-group col-lg-3 col-lg-offset-5 col-md-4 col-md-offset-5 col-sm-6 col-xs-12">
+					<span class="text-danger">{{user_error}}</span><br/>
+					<input type="submit" class="form-control btn btn-success" ng-click="userRegister()">
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<!-- Footer Part -->
+<nav class="navbar navbar-fixed-bottom">
+	<div id="footer-home">
+		<div class="container">
+			<p>This is The Footer Contents || KVC Bose </p>
+		</div>	
+	</div>
+</nav>

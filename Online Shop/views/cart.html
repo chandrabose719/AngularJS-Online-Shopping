@@ -1,0 +1,74 @@
+<!-- Header Part -->
+<div id="header-part">
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#!/"><img src="images/header-title.png" alt="My Site"></a>
+			</div>
+			<div class="navbar-right">
+				<ul class="nav navbar-nav"> 
+					<li><a href="#!/">Home</a></li>
+					<li><a href="#!/product">Product</a></li>
+					<li><a href="#!/login">Login</a></li>
+					<li><a href="#!/register">Register</a></li>
+				</ul>
+			</div>	
+		</div>
+	</div>
+</div>
+<!-- Product Main -->
+<div id="cart-part" ng-controller="cartCtrl">
+	<div class="container">
+		<h2>Cart</h2>
+		<div class="divider"></div>
+		<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12">
+			<div class="cart-content">
+				<div class="table-responsive">
+					<table class="table table-bordered table-striped">
+						<tr>
+							<th class="text-center">Product Name</th>
+							<th class="text-center">Product Quantity</th>
+							<th class="text-center">Product Amount</th>
+						</tr>
+						<tr ng-repeat="cart in carts">
+							<td class="text-center">{{cart.product_name}}</td>
+							<td class="text-center">
+								<a href="" ng-click="decCart(cart.product_id)"> - </a>
+								{{cart.product_qty}}
+								<a href="" ng-click="incCart(cart.product_id)"> + </a>
+							</td>
+							<td class="text-center">{{cart.product_cost * cart.product_qty}}</td>
+						</tr>
+						<tr>
+							<th class="text-center"></th>
+							<th class="text-center">Product Total</th>
+							<th class="text-center">{{productTotal}}</th>
+						</tr>
+					</table>
+				</div>	
+			</div>
+		</div>
+		<div class="grb-btn">
+			<div class="col-lg-4 col-lg-offset-2 col-md-4 col-md-offset-2 col-sm-6 col-xs-12">
+				<input type="submit" class="form-control btn btn-warning" onclick="location.href='#!/product'" value="Back To Product">
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+				<input type="submit" class="form-control btn btn-info" onclick="location.href='#!/payment'" value="Checkout The Cart">
+			</div>			
+		</div>		
+	</div>
+</div>
+<!-- Footer Part -->
+<nav class="navbar navbar-fixed-bottom">
+	<div id="footer-home">
+		<div class="container">
+			<p>This is The Footer Contents || KVC Bose </p>
+		</div>	
+	</div>
+</nav>
