@@ -1,0 +1,22 @@
+{
+  "name": "First Project",
+  "homepage": "https://github.com/chandrabose719/Code-Igniter-Sample",
+  "authors": [
+    "chandrabose719 <chandrabose719@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.7",
+    "angular-route": "^1.6.7",
+    "angular-cookies": "^1.6.7"
+  }
+}
